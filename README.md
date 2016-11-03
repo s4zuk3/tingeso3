@@ -13,17 +13,20 @@ Realizado por:
 ## Contenido
 
 1) Frontend:
-Aplicación desarrollada en AngularJS. Consume la API backend.
-Muestra todos los productos contenidos en la base de datos.
-Permite la creación de nuevos productos.
-
+<!-- toc -->
+- Aplicación desarrollada en AngularJS. Consume la API backend.
+- Muestra todos los productos contenidos en la base de datos.
+- Permite la creación de nuevos productos.
+<!-- tocstop -->
 2) Backend:
-Aplicación desarrollada en JavaEE. Despliega una API Rest.
-Se utiliza eclipse+gradle para su codificación y compilación.
-
+<!-- toc -->
+- Aplicación desarrollada en JavaEE. Despliega una API Rest.
+- Se utiliza eclipse+gradle para su codificación y compilación.
+<!-- tocstop -->
 3) SQL:
-Se encuentra el archivo base de SQL.
-
+<!-- toc -->
+- Se encuentra el archivo base de SQL.
+<!-- tocstop -->
 
 ---
 
