@@ -18,11 +18,13 @@ Realizado por:
 - Muestra todos los productos contenidos en la base de datos.
 - Permite la creación de nuevos productos.
 <!-- tocstop -->
+
 2) Backend:
 <!-- toc -->
 - Aplicación desarrollada en JavaEE. Despliega una API Rest.
 - Se utiliza eclipse+gradle para su codificación y compilación.
 <!-- tocstop -->
+
 3) SQL:
 <!-- toc -->
 - Se encuentra el archivo base de SQL.
