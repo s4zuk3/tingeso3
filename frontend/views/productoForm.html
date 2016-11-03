@@ -1,0 +1,17 @@
+<form name="productoForm" novalidate>
+    
+    <div class="form-group">
+      <label>Codigo Producto</label>
+      <input type="text" name="codigoProducto" class="form-control" 
+        ng-model="newProducto.codigoProducto">
+    </div>
+
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-danger" ng-click="submit(newProducto)">Submit</button>
+    </div>
+    
+  </form>
+
+JSON GENERADO:
+  <pre>{{ newProducto | json }}</pre>
