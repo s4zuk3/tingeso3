@@ -10,7 +10,7 @@ create table producto
    descripcion_producto varchar(210),
    precio_producto      int,
    foto_producto        varchar(200),
-   cuidad_prodcuto      varchar(50),
+   cuidad_producto      varchar(50),
    nombre_anunciante_producto varchar(50),
    telefono_anunciante_producto  varchar(100),
    primary key (id_producto)
