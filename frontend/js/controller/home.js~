@@ -3,6 +3,5 @@ tingesoApp.controller('HomeController',function($scope,$location,Productos_servi
 	Productos_service.getAllProductos().then(function(response) {
         	$scope.productos = response.data;
         });
-	$scope.nametest = 'Test OK';
 
 });

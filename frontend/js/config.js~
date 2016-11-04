@@ -5,7 +5,7 @@ tingesoApp.config(['$routeProvider', function($routeProvider) {
 		controller: 'HomeController'})
 	.when('/new', {
 		templateUrl: 'views/productoForm.html',
-		controller: 'ProductoFormController'})
+		controller: 'productoFormController'})
 	.otherwise({
 		redirectTo: '/'
 	});
