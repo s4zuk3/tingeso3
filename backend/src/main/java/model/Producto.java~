@@ -35,6 +35,9 @@ public class Producto implements Serializable {
 
 	@Column(name="telefono_anunciante_producto", length=100)
 	private String telefonoAnuncianteProducto;
+
+	@Column(name="descripcion", nullable=true, length=400)
+	private String descripcion;
 		
 	public Producto() {
 	}
@@ -109,6 +112,14 @@ public class Producto implements Serializable {
 
     public void setTelefonoAnuncianteProducto(String telefonoAnuncianteProducto) {
         this.telefonoAnuncianteProducto = telefonoAnuncianteProducto;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
 
