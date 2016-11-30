@@ -13,7 +13,9 @@ tingesoApp.controller('ProductoFormController',function($scope,$location,Product
 
 			if(response.status == 200) // creacion OK
 			{
-				 alert("Creación correcta. Status code 200");
+				 //alert("Creación correcta. Status code 200");
+				 $location.path('/');
+
 			}
 			else if(response.status == 403) // ya existe ID
 			{

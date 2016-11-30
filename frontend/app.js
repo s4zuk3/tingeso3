@@ -7,5 +7,5 @@ var tingesoApp = angular.module('tingesoApp', [
 	"ui.bootstrap"
 	])
 
-var URL_API = 'http://localhost:8080/backend';
+var URL_API = 'http://localhost:8181/backend';
 // No agregar nada a este archivo. (Solo dependencias)
