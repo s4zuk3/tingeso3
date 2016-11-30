@@ -1,5 +1,7 @@
 tingesoApp.controller('ProductoFormController',function($scope,$location,Productos_service){
-	$scope.newProducto = {};
+	$scope.newProducto = {
+		'fotoProducto':'test.jpg'
+	};
 
 	$scope.submit = function(newProducto){
 		//Funciones de validaciones
