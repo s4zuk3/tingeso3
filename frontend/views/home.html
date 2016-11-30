@@ -1,7 +1,17 @@
 <div class="container">
 	Testing
 	{{ nametest }}
-	
+	<div ng-repeat="producto in productos">
+		 <h2>{{producto.nombreProducto}}<br>{{producto.precioProducto}}</h2>
+            <p>
+            Descripción: {{producto.descripcionProducto}}<br>
+            Código de producto: {{producto.codigoProducto}}<br>
+            Nombre Anunciante: {{producto.nombreAnuncianteProducto }}<br>
+            Teléfono: {{producto.telefonoAnuncianteProducto}}</p>
+            Ciudad: {{producto.cuidadProducto}}<br>
+        
+
+	</div>
 
 	<div class="class="gridListdemoBasicUsage"">
 	<div class='md-padding' layout="row" layout-wrap>
