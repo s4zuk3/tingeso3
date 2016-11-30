@@ -1,10 +1,10 @@
 <div class="container">
-	<div class="class="gridListdemoBasicUsage"">
+	
 	Productos Tingeso
 	<div style="padding:20px 0px 60px 0px">
       <span class="col-md-3">
 
-  	<a id="boton_agregar" class="btn btn-large btn-info" href="/new">Agregar producto</a>
+  	<a id="boton_agregar" class="btn btn-large btn-info" href="#/new">Agregar producto</a>
 
       </span>
     </div>
@@ -15,7 +15,7 @@
           <md-card-content>
             <h2>{{producto.nombreProducto}}</h2>
             <p>
-            Precio: ${{producto.precioProducto}}
+            Precio: ${{producto.precioProducto}}<br>
             Descripción: {{producto.descripcionProducto}}<br>
             Código de producto: {{producto.codigoProducto}}<br>
             Nombre Anunciante: {{producto.nombreAnuncianteProducto }}<br>
@@ -24,5 +24,5 @@
           </md-card-content>
         </md-card>
     </div>
-    </div>
+    
 </div>
