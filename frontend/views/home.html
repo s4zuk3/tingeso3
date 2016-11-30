@@ -1,18 +1,26 @@
 <div class="container">
 	<div class="class="gridListdemoBasicUsage"">
+	Productos Tingeso
+	<div style="padding:20px 0px 60px 0px">
+      <span class="col-md-3">
+
+  	<a id="boton_agregar" class="btn btn-large btn-info" href="/new">Agregar producto</a>
+
+      </span>
+    </div>
+
 	<div class='md-padding' layout="row" layout-wrap>
         <md-card style="width: 300px;" ng-repeat="producto in productos">
           <img src="/upload/{{producto.fotoProducto}}" width="150" class="md-card-image" alt="user avatar">
           <md-card-content>
-            <h2>{{producto.nombreProducto}}<br>{{producto.precioProducto}}</h2>
+            <h2>{{producto.nombreProducto}}</h2>
             <p>
+            Precio: ${{producto.precioProducto}}
             Descripción: {{producto.descripcionProducto}}<br>
             Código de producto: {{producto.codigoProducto}}<br>
             Nombre Anunciante: {{producto.nombreAnuncianteProducto }}<br>
-            Teléfono: {{producto.telefonoAnuncianteProducto}}</p>
-            Ciudad: {{producto.cuidadProducto}}<br>
-        
-            
+            Teléfono: {{producto.telefonoAnuncianteProducto}}<br>
+            Ciudad: {{producto.cuidadProducto}}</p>
           </md-card-content>
         </md-card>
     </div>
