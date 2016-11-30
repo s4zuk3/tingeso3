@@ -1,4 +1,28 @@
 <div class="container">
-Testing
-{{ nametest }}
+	Testing
+	{{ nametest }}
+	
+
+	<div class="class="gridListdemoBasicUsage"">
+	<div class='md-padding' layout="row" layout-wrap>
+        <md-card style="width: 300px;" ng-repeat="producto in productos">
+          <img src="/upload/{{producto.fotoProducto}}" width="150" class="md-card-image" alt="user avatar">
+          <md-card-content>
+            <h2>{{producto.nombreProducto}}<br>{{producto.precioProducto}}</h2>
+            <p>
+            Descripción: {{producto.descripcionProducto}}<br>
+            Código de producto: {{producto.codigoProducto}}<br>
+            Nombre Anunciante: {{producto.nombreAnuncianteProducto }}<br>
+            Teléfono: {{producto.telefonoAnuncianteProducto}}</p>
+            Ciudad: {{producto.cuidadProducto}}<br>
+        
+            
+          </md-card-content>
+        </md-card>
+    </div>
+    </div>
+ 
+
+
+
 </div>
