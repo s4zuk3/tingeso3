@@ -1,6 +1,7 @@
-tingesoApp.controller('ProductoFormController',function($scope,$location,Productos_service){
+tingesoApp.controller('ProductoFormController',function($scope,$rootScope,$location,Productos_service){
 	$scope.newProducto = {
-		'fotoProducto':'test.jpg'
+		'fotoProducto':'test.jpg',
+		'idProducto': $rootScope.idProducto+1
 	};
 
 	$scope.submit = function(newProducto){
