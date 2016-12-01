@@ -5,13 +5,13 @@ tingesoApp.controller('ProductoFormController',function($scope,$rootScope,$locat
 	};
 
 
-	$scope.submit = function(newProducto){
+	$scope.submit = function(newProducto,file){
 		//Funciones de validaciones
 		// Si hay algun error se cambian los scope.error y return;
 
 		//Logica variada
-		alert(JSON.stringify(Flow.files));
-		alert(Flow.files[0].name);
+		alert(JSON.stringify(file.files));
+		alert(file.files[0].name);
 		return;
 		//newProducto.fotoProducto = $flow.files[0];
 
