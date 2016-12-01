@@ -1,6 +1,6 @@
 tingesoApp.controller('ProductoFormController',function($scope,$rootScope,$location,Productos_service){
 	$scope.newProducto = {
-		'fotoProducto':'test.jpg',
+		'fotoProducto':$flow.files[0],
 		'idProducto': $rootScope.idProducto+1
 	};
 
