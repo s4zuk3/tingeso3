@@ -7,7 +7,7 @@ tingesoApp.controller('HomeController',function($scope,$rootScope,$location,Prod
    			var data = response.data;
    			alert($rootScope.idProducto);
    			for(pro in data){
-   				alert("entre");
+   				alert(pro.idProducto + " "+ $rootScope.idProducto);
    				if(pro.idProducto > $rootScope.idProducto){
    					$rootScope.idProducto = pro.idProducto;
    					alert($rootScope.idProducto);
