@@ -9,9 +9,9 @@ tingesoApp.controller('ProductoFormController',function($scope,$rootScope,$locat
 		// Si hay algun error se cambian los scope.error y return;
 
 		//Logica variada
-		alert(JSON.stringify($flow));
+		alert($flow);
 		newProducto.fotoProducto = $flow.files[0];
-		alert(JSON.stringify(newProducto));
+		alert(newProducto);
 		Productos_service.createProducto(newProducto).then(function(response) {
 
 			if(response.status == 200) // creacion OK
