@@ -32,6 +32,7 @@ public class ProductoService {
     @Consumes({"application/xml", "application/json"})
     public void create(Producto entity) {
         productoFacadeEJB.create(entity);
+        return Response.status(Status.OK).build();
     }
 
 }

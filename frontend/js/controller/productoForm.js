@@ -12,7 +12,7 @@ tingesoApp.controller('ProductoFormController',function($scope,$rootScope,$locat
 
 		Productos_service.createProducto(newProducto).then(function(response) {
 
-			if(response.status == 200 || response.status == 203 ) // creacion OK
+			if(response.status == 200 ) // creacion OK
 			{
 				 //alert("Creación correcta. Status code 200");
 				 $location.path('/');
