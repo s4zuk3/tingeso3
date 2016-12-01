@@ -1,6 +1,6 @@
 tingesoApp.controller('ProductoFormController',function($scope,$rootScope,$location,Productos_service){
 	$scope.newProducto = {
-		'fotoProducto':'test.jpg',
+		'fotoProducto':'Al momento de apretar submit cambia',
 		'idProducto': $rootScope.idProducto+1
 	};
 
@@ -10,9 +10,7 @@ tingesoApp.controller('ProductoFormController',function($scope,$rootScope,$locat
 		// Si hay algun error se cambian los scope.error y return;
 
 		//Logica variada
-		alert(namefile);
-		return;
-		//newProducto.fotoProducto = $flow.files[0];
+		newProducto.fotoProducto = namefile;
 
 		Productos_service.createProducto(newProducto).then(function(response) {
 
