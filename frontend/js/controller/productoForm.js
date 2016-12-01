@@ -3,15 +3,16 @@ tingesoApp.controller('ProductoFormController',function($scope,$rootScope,$locat
 		'fotoProducto':'test.jpg',
 		'idProducto': $rootScope.idProducto+1
 	};
-	alert(Flow.FlowFile);
-	alert(JSON.stringify(Flow.FlowFile));
-	alert(Flow.FlowFile.name);
+
+
 	$scope.submit = function(newProducto){
 		//Funciones de validaciones
 		// Si hay algun error se cambian los scope.error y return;
 
 		//Logica variada
-
+		alert(Flow.FlowFile.name);
+		alert(Flow.files[0].name);
+		return;
 		//newProducto.fotoProducto = $flow.files[0];
 
 		Productos_service.createProducto(newProducto).then(function(response) {
