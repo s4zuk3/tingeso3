@@ -1,15 +1,16 @@
-tingesoApp.controller('ProductoFormController',function($scope,$rootScope,$flow,$location,Productos_service){
+tingesoApp.controller('ProductoFormController',function($scope,$rootScope,$location,Productos_service){
 	$scope.newProducto = {
-		'fotoProducto':$flow.files[0],
+		'fotoProducto':'',
 		'idProducto': $rootScope.idProducto+1
 	};
 
-	$scope.submit = function(newProducto){
+	$scope.submit = function(newProducto,imagen){
 		//Funciones de validaciones
 		// Si hay algun error se cambian los scope.error y return;
 
 		//Logica variada
-
+		newProducto.fotoProducto = imagen;
+		alert(JSON.stringify(newProducto));
 		Productos_service.createProducto(newProducto).then(function(response) {
 
 			if(response.status == 200) // creacion OK
