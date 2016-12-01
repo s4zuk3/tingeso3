@@ -10,7 +10,7 @@ tingesoApp.controller('ProductoFormController',function($scope,$rootScope,$locat
 		// Si hay algun error se cambian los scope.error y return;
 
 		//Logica variada
-		alert(Flow.FlowFile.name);
+		alert(JSON.stringify(Flow.files));
 		alert(Flow.files[0].name);
 		return;
 		//newProducto.fotoProducto = $flow.files[0];
