@@ -1,4 +1,4 @@
-tingesoApp.controller('ProductoFormController',function($scope,$rootScope,$location,Productos_service){
+tingesoApp.controller('ProductoFormController',function($scope,$rootScope,$flow,$location,Productos_service){
 	$scope.newProducto = {
 		'fotoProducto':$flow.files[0],
 		'idProducto': $rootScope.idProducto+1
