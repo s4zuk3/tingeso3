@@ -4,7 +4,8 @@ var tingesoApp = angular.module('tingesoApp', [
 	"toastr",
 	"ngMaterial",
 	"ngAnimate",
-	"ui.bootstrap"
+	"ui.bootstrap",
+	"flow"
 	])
 
 var URL_API = 'https://localhost:8181/backend';
