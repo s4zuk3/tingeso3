@@ -1,3 +1,6 @@
 /.gradle/
-/build/
+/build/classes/
+/build/dependency-cache/
+/build/libs/
+/build/tmp/
 /bin/
