@@ -17,7 +17,7 @@
 	<target name="copy" depends="create">
 	
 		<copy overwrite="true" todir="src">
-			<fileset dir="../src/main/java/junit" includes="*.java" ></fileset>
+			<fileset dir="../TEST/junit" includes="*.java" ></fileset>
 		</copy>	
 	</target>
 	<path id="classpath">
@@ -34,7 +34,7 @@
 	<target name="run" depends="compile">
 		<junit haltonfailure="false" printsummary="true">
 			<classpath refid="classpath"></classpath>
-			<test name="junit.ProductoTest" todir="reports"></test>
+			<test name="ProductoTest" todir="reports"></test>
 			<formatter type="xml"/>
 		</junit>
 	</target>
