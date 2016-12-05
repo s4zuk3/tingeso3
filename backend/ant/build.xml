@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Junit Test" default="run" basedir=".">
+	<target name="cleanup">
+		<delete dir="bin"/>
+		<delete dir="src"/>
+		<delete dir="reports"/>
+		
+	</target>
+	
+	<target name="create" depends="cleanup">
+		<mkdir dir="bin"/>
+		<mkdir dir="src"/>
+		<mkdir dir="reports"/>
+	
+	</target>
+	
+	<target name="copy" depends="create">
+	
+		<copy overwrite="true" todir="src">
+			<fileset dir="../src/main/java/junit" includes="*.java" ></fileset>
+		</copy>	
+	</target>
+	<path id="classpath">
+		<path location="lib">
+			<fileset dir="lib" includes="*.jar"></fileset>
+		</path>
+		<path location="bin"></path>
+	</path>
+	<target name="compile" depends="copy">
+		<javac classpathref="classpath" includeantruntime="true" srcdir="src" destdir="bin" description="Compilando java files" includes="*.java">
+			
+		</javac>
+	</target>
+	<target name="run" depends="compile">
+		<junit haltonfailure="false" printsummary="true">
+			<classpath refid="classpath"></classpath>
+			<test name="junit.ProductoTest" todir="reports"></test>
+			<formatter type="xml"/>
+		</junit>
+	</target>
+	
+
+</project>
