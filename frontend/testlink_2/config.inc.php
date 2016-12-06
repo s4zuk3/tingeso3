@@ -202,7 +202,7 @@ $tlCfg->smarty_debug = false;
  *  for security reasons (see http://itsecuritysolutions.org/2012-08-13-TestLink-1.9.3-multiple-vulnerabilities/)
  *  put it out of reach via web or configure access denied.
  */
-$tlCfg->log_path = '/home/s4zuk3/Desktop/tingeso/tingeso3/frontend/testlink/logs/'; /* unix example */
+$tlCfg->log_path = '/home/raysis/tingeso3/frontend/testlink/logs/'; /* unix example */
 
 
 /**
@@ -1128,7 +1128,7 @@ $g_repositoryType = TL_REPOSITORY_TYPE_FS;
  * Put it out of reach via web or configure access denied.
  *
  **/
-$g_repositoryPath = '/home/s4zuk3/Desktop/tingeso/tingeso3/frontend/testlink/upload_area/';  /* unix example */
+$g_repositoryPath = '/home/raysis/tingeso3/frontend/testlink/upload_area/';  /* unix example */
 
 /**
  * compression used within the repository
