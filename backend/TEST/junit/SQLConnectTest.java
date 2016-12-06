@@ -24,7 +24,9 @@ public class SQLConnectTest {
 		{
 			Class.forName( "com.mysql.jdbc.Driver" ).newInstance( );
 			conn = DriverManager.getConnection( url, userName, password );
+			conn.setAutoCommit(false);
 			stmt = conn.createStatement();
+
 		}
 		catch ( Exception e )
 		{
