@@ -39,6 +39,7 @@ public class ProductoService {
 		return Response.status(Status.OK).entity(a).build();		
 	}
 	*/
+	
 	@POST
     @Consumes({"application/xml", "application/json"})
     public void create(Producto entity) {
