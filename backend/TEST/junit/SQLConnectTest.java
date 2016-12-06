@@ -34,7 +34,6 @@ public class SQLConnectTest {
 		}
 	}
 	
-
 	@AfterClass
 	public static void destroy() 
 	{
@@ -48,7 +47,9 @@ public class SQLConnectTest {
 			}
 			catch ( SQLException ignore )
 			{
+				
 			}
+			catch (){}
 		}
 	}
 	
