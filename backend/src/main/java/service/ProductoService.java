@@ -27,6 +27,14 @@ public class ProductoService {
 	public List<Producto> findAll(){
 		return productoFacadeEJB.findAll();
 	}
+
+	@GET
+	@Path("{idProducto: [0-9]+}")
+	@Produces({"application/xml", "application/json"})
+	public Response find(@PathParam("idProducto") Integer idProducto){				
+		Producto a = productoFacadeEJB.find(idProducto);	
+		return Response.status(Status.OK).entity(a).build();		
+	}
 	
 	@POST
     @Consumes({"application/xml", "application/json"})
