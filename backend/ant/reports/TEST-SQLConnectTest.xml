@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="FranciscoVB" name="ProductoTest" skipped="0" tests="1" time="0.364" timestamp="2016-12-06T01:58:31">
+<testsuite errors="1" failures="0" hostname="FranciscoVB" name="SQLConnectTest" skipped="0" tests="1" time="1.2" timestamp="2016-12-06T01:58:31">
   <properties>
     <property name="ant.project.invoked-targets" value="run" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
@@ -67,7 +67,19 @@
     <property name="sun.desktop" value="gnome" />
     <property name="sun.cpu.isalist" value="" />
   </properties>
-  <testcase classname="ProductoTest" name="unitarytestSucess" time="0.002" />
+  <testcase classname="SQLConnectTest" name="test_getAllProduct" time="0.114">
+    <error message="Can&apos;t call rollback when autocommit=true" type="com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException">com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Can&apos;t call rollback when autocommit=true
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:918)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ConnectionImpl.rollback(ConnectionImpl.java:4586)
+	at SQLConnectTest.after(Unknown Source)
+</error>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
