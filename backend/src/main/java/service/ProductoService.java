@@ -27,16 +27,8 @@ public class ProductoService {
 	@GET
 	@Produces({"application/xml", "application/json"})
 	public List<Producto> findAll(){
-		int suma;
-		for(int i=0;i<10;i++){
-			suma = i+i;
-			suma = i+i;
-			
-		}
 		return productoFacadeEJB.findAll();
 	}
-	
-	
 
 	/*
 	@GET
