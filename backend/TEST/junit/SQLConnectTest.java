@@ -35,11 +35,6 @@ public class SQLConnectTest {
 	}
 	
 
-
-
-  
-
-
 	@AfterClass
 	public static void destroy() 
 	{
@@ -73,6 +68,32 @@ public class SQLConnectTest {
 	public void test_getAllProduct() throws Exception 
 	{
 	  String sql = "select * from producto";
+     
+	  try{
+			ResultSet rs = stmt.executeQuery(sql);
+	  }catch(Exception e){
+	  		fail();
+	  }
+      assertTrue(true);
+
+	}
+	@Test
+	public void test_getFirstProduct() throws Exception 
+	{
+	  String sql = "select * from producto where id_producto = 1 ";
+     
+	  try{
+			ResultSet rs = stmt.executeQuery(sql);
+	  }catch(Exception e){
+	  		fail();
+	  }
+      assertTrue(true);
+
+	}
+	@Test
+	public void test_countAllProduct() throws Exception 
+	{
+	  String sql = "select count(*) c from producto";
      
 	  try{
 			ResultSet rs = stmt.executeQuery(sql);

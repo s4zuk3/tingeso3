@@ -34,7 +34,6 @@
 	<target name="run" depends="compile">
 		<junit haltonfailure="false" printsummary="true">
 			<classpath refid="classpath"></classpath>
-			<test name="ProductoTest" todir="reports"></test>
 			<test name="SQLConnectTest" todir="reports"></test>
 			<formatter type="xml"/>
 		</junit>
