@@ -98,6 +98,10 @@ public class SQLConnectTest {
      
 	  try{
 			ResultSet rs = stmt.executeQuery(sql);
+			for(int i=0;i<10;i++){
+				int suma = i+i;
+				int suma = i+i;
+			}
 	  }catch(Exception e){
 	  		fail();
 	  }
