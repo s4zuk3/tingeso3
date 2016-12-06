@@ -13,6 +13,8 @@ import javax.ws.rs.Produces;
 
 import facade.ProductoFacade;
 import model.Producto;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
 
 @Path("/productos")
 public class ProductoService {

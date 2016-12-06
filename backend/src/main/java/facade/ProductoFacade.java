@@ -9,5 +9,7 @@ public interface ProductoFacade {
 
 	public void create(Producto entity);
 
+	public Producto find(Object id);
+
 	public List<Producto> findAll();
 }
